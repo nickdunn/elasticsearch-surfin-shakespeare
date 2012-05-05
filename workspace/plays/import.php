@@ -52,7 +52,7 @@ while ($file = readdir($handler)) {
 closedir($handler);
 
 function post($data) {
-	$ch = curl_init('http://symphony225.local//import/');
+	$ch = curl_init('http://symphony-2/import/');
 	curl_setopt($ch, CURLOPT_POST, 1);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
