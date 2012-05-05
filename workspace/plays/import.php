@@ -29,7 +29,7 @@ while ($file = readdir($handler)) {
 				$i = 0;
 				foreach($scene->xpath('SPEECH') as $speech) {
 
-					$speaker_name = rawurlencode((string)$speech->SPEAKER);
+					$speaker_name = rawurlencode(ucwords(strtolower((string)$speech->SPEAKER)));
 
 					$lines = array();
 					foreach($speech->xpath('LINE') as $line) {
