@@ -1,0 +1,33 @@
+============================================
+Log Created: 2012-05-05T22:52:35+01:00
+============================================
+Symphony Log
+Opened:  2012-05-05T22:52:35+01:00
+Version: 2.3RC2
+Domain:  symphony-2
+--------------------------------------------
+
+============================================
+INSTALLATION PROCESS STARTED (2012-05-05T22:53:16+01:00)
+============================================
+05/05/2012 10:53 pm > Notice: MYSQL: Establishing Connection
+05/05/2012 10:53 pm > Notice: MYSQL: Importing Table Schema
+05/05/2012 10:53 pm > Notice: MYSQL: Creating Default Author
+05/05/2012 10:53 pm > Notice: WRITING: Creating ‘manifest’ folder (/manifest)
+05/05/2012 10:53 pm > Notice: WRITING: Creating ‘logs’ folder (/manifest/logs)
+05/05/2012 10:53 pm > Notice: WRITING: Creating ‘cache’ folder (/manifest/cache)
+05/05/2012 10:53 pm > Notice: WRITING: Creating ‘tmp’ folder (/manifest/tmp)
+05/05/2012 10:53 pm > Notice: WRITING: Configuration File
+05/05/2012 10:53 pm > Notice: CONFIGURING: Frontend
+05/05/2012 10:53 pm > Notice: WRITING: Creating ‘workspace’ folder (/workspace)
+05/05/2012 10:53 pm > Notice: WRITING: Creating ‘data-sources’ folder (/workspace/data-sources)
+05/05/2012 10:53 pm > Notice: WRITING: Creating ‘events’ folder (/workspace/events)
+05/05/2012 10:53 pm > Notice: WRITING: Creating ‘pages’ folder (/workspace/pages)
+05/05/2012 10:53 pm > Notice: WRITING: Creating ‘utilities’ folder (/workspace/utilities)
+05/05/2012 10:53 pm > Notice: CONFIGURING: Installing existing extensions
+============================================
+INSTALLATION COMPLETED: Execution Time - 3 sec (05.05.12 22:53:19)
+============================================
+
+
+
