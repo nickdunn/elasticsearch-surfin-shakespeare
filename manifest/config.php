@@ -99,7 +99,7 @@
 			'direction' => 'desc',
 			'highlight-fragment-size' => '200',
 			'highlight-per-field' => '1',
-			'build-entry-xml' => 'no',
+			'build-entry-xml' => 'yes',
 			'default-sections' => null,
 			'default-language' => null,
 			'log-searches' => 'yes',
