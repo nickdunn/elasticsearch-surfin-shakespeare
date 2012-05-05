@@ -1,0 +1,232 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+}
+input, button {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+}
+form {
+	background: #f5f5f5;
+	border-bottom: 1px solid #ddd;
+	padding: 20px 20px 20px 220px;
+	overflow: hidden;
+}
+form input[type='text'] {
+	border: 1px solid #ddd;
+	padding: 6px 8px;
+	outline: none;
+	float: left;
+	width: 400px;
+	-webkit-border-radius: 10px 0 0 10px;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+form input.auto-complete-open {
+	-webkit-border-radius: 10px 0 0 0;
+	border-bottom: 1px solid #eee;
+}
+form button {
+	float: left;
+	background: #4899fe;
+	color: #fff;
+	padding: 6px 18px;
+	outline: none;
+	border: 1px solid #2e8bff;
+	-webkit-border-radius: 0 10px 10px 0;
+	-webkit-box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.5), 0 0 5px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+form button:hover {
+	background: #388cf5;
+}
+h2 {
+	font-size: 16px;
+	font-weight: bold;
+}
+a {
+	color: #0669cf;
+	font-weight: normal;
+}
+div#filters {
+	width: 200px;
+	float: left;
+	margin: 20px 20px 0 0;
+}
+div#results {
+	width: 500px;
+	float: left;
+	padding-bottom: 40px;
+}
+#filters h2 {
+	display: none;
+}
+ul.filters {
+	list-style-type: none;
+}
+ul.filters a {
+	display: block;
+	padding: 7px 15px;
+	text-decoration: none;
+	color: #333;
+}
+ul.filters a:hover,
+ul.filters li.selected a {
+	background: #f1f1f1;
+}
+ul.filters a span {
+	font-weight: 200;
+	color: #999;
+	float: right;
+	font-size: 14px;
+}
+ul.filters li.selected a {
+	color: #e93217;
+}
+#results h2 {
+	font-weight: normal;
+	margin: 20px 0 10px 0;
+}
+#results h2 span {
+	color: #999;
+	font-size: 18px;
+}
+p.did-you-mean {
+	margin: 20px 0 -10px 0;
+	color: #666;
+}
+p.did-you-mean a {
+	font-weight: bold;
+}
+strong {
+	font-weight: bold;
+}
+.result {
+	font-size: 13px;
+	line-height: 1.3;
+	padding: 5px 0;
+	margin: 5px 0;
+	border-bottom: 1px solid #eee;
+	position: relative;
+	overflow: hidden;
+	min-height: 45px;
+	padding-right: 55px;
+}
+.result h3 {
+	font-weight: normal;
+	color: #666;
+	margin: 0 0 3px 0;
+	font-size: 13px;
+}
+.result h3 a span {
+	text-transform: capitalize;
+}
+.result .url {
+	color: #16a83f;
+	display: inline-block;
+	margin: 3px 0;
+	text-decoration: none;
+	display: none;
+}
+
+.result.plays h3 span,
+.result.acts h3 span,
+.result.scenes h3 span {
+	display: block;
+}
+
+.no-results h2 + p,
+.no-results p + ul {
+	font-size: 14px;
+}
+
+.no-results ul {
+	margin: 10px 20px;
+}
+
+.pagination {
+	list-style-type: none;
+	margin-top: 20px;
+}
+.pagination li {
+	display: inline;
+}
+.pagination li a {
+	display: inline-block;
+	padding: 4px 9px;
+	text-decoration: none;
+	font-size: 14px;
+	color: #0669cf;
+}
+.pagination .disabled {
+	display: none;
+}
+.pagination .pagination-previous {
+	padding-left: 0;
+}
+.pagination li a:hover {
+	color: #333;
+}
+.pagination .selected a {
+	color: red;
+	background: none;
+	font-weight: bold;
+}
+
+.ui-autocomplete {
+	position: absolute;
+	cursor: default;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-top: none;
+	padding: 0;
+	width: 399px;
+	max-height: 313px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	-webkit-border-radius: 0 0 10px 10px;
+	-webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+	top: -1px;
+	list-style-type: none;
+}
+
+.ui-autocomplete a {
+	padding: 4px 8px;
+	display: block;
+	cursor: pointer;
+}
+.ui-autocomplete a:hover,
+.ui-autocomplete a.ui-state-hover {
+	background: #eee;
+}
+
+.ui-autocomplete a span.yes {
+	font-weight: bold;
+}
+
+.type {
+	-webkit-transform: rotate(40deg);
+	background: #eee;
+	padding: 2px;
+	width: 105px;
+	text-align: center;
+	position: absolute;
+	top: 10px;
+	right: -30px;
+	display: inline-block;
+	color: #fff;
+	font-size: 11px;
+}
+
+.filters li.everything { border-left: 10px solid #ddd; }
+.type.speech { background: #90c1e6; }
+.filters li.speeches { border-left: 10px solid #90c1e6; }
+.type.play { background: #99d282; }
+.filters li.plays { border-left: 10px solid #99d282; }
+.type.scene { background: #f68b8b; }
+.filters li.scenes { border-left: 10px solid #f68b8b; }
+.type.act { background: #f9ef5d; color: #999; }
+.filters li.acts { border-left: 10px solid #f9ef5d; }

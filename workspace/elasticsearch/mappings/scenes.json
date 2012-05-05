@@ -1,0 +1,24 @@
+{
+	"scenes": {
+		"properties": {
+			"title": {
+				"type" : "multi_field",
+				"store": "yes",
+				"fields": {
+					"title": {"type" : "string"},
+					"raw" : {"type" : "string", "index" : "not_analyzed"},
+					"symphony_fulltext" : {"type" : "string", "analyzer": "symphony_fulltext"}
+				}
+			},
+			"act": {
+				"type" : "multi_field",
+				"store": "yes",
+				"fields": {
+					"act": {"type" : "string"},
+					"raw" : {"type" : "string", "index" : "not_analyzed"},
+					"symphony_fulltext" : {"type" : "string", "analyzer": "symphony_fulltext"}
+				}
+			}
+		}
+	}
+}

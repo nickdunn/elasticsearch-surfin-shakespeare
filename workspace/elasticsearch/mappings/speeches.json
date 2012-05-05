@@ -1,0 +1,25 @@
+{
+	"speeches": {
+		"properties": {
+			"speaker": {
+				"type" : "multi_field",
+				"store": "yes",
+				"fields": {
+					"speaker": {"type" : "string"},
+					"raw" : {"type" : "string", "index" : "not_analyzed"},
+					"symphony_fulltext" : {"type" : "string", "analyzer": "symphony_fulltext"},
+					"symphony_autocomplete" : {"type" : "string", "analyzer": "symphony_autocomplete"}
+				}
+			},
+			"lines": {
+				"type" : "multi_field",
+				"store": "yes",
+				"fields": {
+					"lines": {"type" : "string"},
+					"raw" : {"type" : "string", "index" : "not_analyzed"},
+					"symphony_fulltext" : {"type" : "string", "analyzer": "symphony_fulltext"}
+				}
+			}
+		}
+	}
+}

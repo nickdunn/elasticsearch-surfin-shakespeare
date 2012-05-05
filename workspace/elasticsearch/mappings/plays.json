@@ -1,0 +1,16 @@
+{
+	"plays": {
+		"properties": {
+			"title": {
+				"type" : "multi_field",
+				"store": "yes",
+				"fields": {
+					"title": {"type" : "string"},
+					"raw" : {"type" : "string", "index" : "not_analyzed"},
+					"symphony_fulltext" : {"type" : "string", "analyzer": "symphony_fulltext"},
+					"symphony_autocomplete" : {"type" : "string", "analyzer": "symphony_autocomplete"}
+				}
+			}
+		}
+	}
+}

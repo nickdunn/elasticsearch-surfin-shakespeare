@@ -1,0 +1,12 @@
+============================================
+Log Created: 2012-05-05T22:53:24+01:00
+============================================
+Symphony Log
+Opened:  2012-05-05T22:53:24+01:00
+Version: 2.3RC2
+Domain:  symphony-2
+--------------------------------------------
+05/05/2012 10:53 pm > User Notice: FrontendPageNotFoundExceptionHandler 1024 - The page you requested does not exist. in file /Users/nick/Sites/symphony-2/symphony/lib/toolkit/class.frontendpage.php on line 298
+05/05/2012 10:55 pm > UNKNOWN: SymphonyErrorPageHandler 0 - Could not find extension <code>debugdevkit</code> at location <code>/Users/nick/Sites/symphony-2/extensions/debugdevkit/extension.driver.php</code> in file /Users/nick/Sites/symphony-2/symphony/lib/toolkit/class.extensionmanager.php on line 861
+05/05/2012 10:56 pm > UNKNOWN: GenericExceptionHandler 0 - ElasticSearch "host" not set in configuration. in file /Users/nick/Sites/symphony-2/extensions/elasticsearch/lib/class.elasticsearch.php on line 31
+05/05/2012 10:58 pm > UNKNOWN: SymphonyErrorPageHandler 0 - The page you requested does not exist. in file /Users/nick/Sites/symphony-2/symphony/lib/core/class.symphony.php on line 508
