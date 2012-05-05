@@ -31,11 +31,11 @@
 
 		###### DATABASE ######
 		'database' => array(
-			'host' => 'localhost',
+			'host' => 'YOUR_HOST',
 			'port' => '3306',
-			'user' => 'root',
-			'password' => 'root',
-			'db' => 'symphony-2',
+			'user' => 'YOUR_USERNAME',
+			'password' => 'YOUR_PASSWORD',
+			'db' => 'YOUR_DATABASE',
 			'tbl_prefix' => 'sym_',
 		),
 		########
@@ -50,7 +50,7 @@
 
 		###### GENERAL ######
 		'general' => array(
-			'sitename' => 'Symphony CMS',
+			'sitename' => 'Surfin\' Shakespeare',
 		),
 		########
 
@@ -90,8 +90,8 @@
 
 		###### ELASTICSEARCH ######
 		'elasticsearch' => array(
-			'host' => 'http://localhost:9200/',
-			'index-name' => 'symphony-2',
+			'host' => '',
+			'index-name' => '',
 			'reindex-batch-size' => '20',
 			'reindex-batch-delay' => '0',
 			'per-page' => '20',
