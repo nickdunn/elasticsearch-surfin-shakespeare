@@ -2,6 +2,8 @@
 
 This is a working demo of ElasticSearch integrated with Symphony using the [ElasticSearch extension](http://symphonyextensions.com/extensions/elasticsearch/). It contains the complete play-works of Shakespeare imported into four sections, primed and ready for indexing.
 
+![Surfin' Shakespeare](http://nick-dunn.co.uk/assets/files/symphony/surfin-shakespeare.png)
+
 ## Install this demo
 
 ### 1. Clone repo and submodules
